@@ -22,7 +22,7 @@ curl --location '<host>' \
 Retrieving the secret:
 
 ```bash
-curl --location '<host>/7DmBmUaDXLc2MOfXvHUWS' \
+curl --location '<host>/G8JRXjO5J0zHMY4Z9mqYN' \
 --header 'Content-Type: application/json' \
 --data '{
     "passphrase": "pas$$w0rd"
