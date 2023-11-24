@@ -1,0 +1,16 @@
+datasource db {
+  provider     = "sqlite"
+  url          = "file:db.sqlite"
+  relationMode = "prisma"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model EncryptedData {
+  id      String @id @unique
+  payload Bytes
+  hash    Bytes
+  salt    Bytes
+}
